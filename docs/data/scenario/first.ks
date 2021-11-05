@@ -1,46 +1,89 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="減量がしたいオグリキャップ"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「減量がしたいオグリキャップ」[l][r]
 
-メロスは激怒した。[l][r]
+オグリキャップはお腹が空いた。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+必ず、2日後に行われる有馬記念に勝つと決意した。[l][r]
 
-(中略)[l][r]
+しかし、それには大好きな食事を減らし減量を頑張らなければならない。[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+とにかく初日は痩せなければならない。しかし、私は腹が減った。ああ、焼肉、ニンジン、ラーメン、焼きそば、ハンバーグ・・・たくさん食べたい。[l][r]
+オグリキャップは...[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_taberu] →食べる [endlink][r]
+[link target=*tag_tabenai] →食べない [endlink][r]
 [s]
 
-*tag_sleep
+*tag_tabenai
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=seikou.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+オグリキャップは空腹で今にも倒れそうだ。[l][r]
+しかし、減量には成功した。[r]
+
+【 SUCCESS 】[l][cm]
+
+[jump target=*continue]
+
+*tag_taberu
+
+[bg storage=sippai.jpg time=500]
+
+[cm]
+
+オグリキャップはたくさん食べた。彼女の表情は幸せそのものだった。[l][r]
+次の日起きるとぷっくり膨れるおなかになっていた。減量は失敗に終わった。[r]
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
+*continue
 
-[bg storage=run.jpg time=500]
+試合当日の朝、オグリキャップはお腹が空いた。[l][r]
+
+絶対、今日行われる有馬記念に勝つと決意した。[l][r]
+
+そのためには今日も大好きな食事を減らし減量を頑張らなければならない。[l][r]
+
+しかし、私は腹が減った。ああ、焼肉、ニンジン、ラーメン、焼きそば、ハンバーグ、チャーハン、餃子、ピザ・・・たくさん食べたい。[l][r]
+オグリキャップは...[l][r]
+
+[link target=*tag_taberu] →たくさん食べる [endlink][r]
+[link target=*tag_yusyou] →ニンジン一本だけ食べる [endlink][r]
+[link target=*tag_maketa] →食べない [endlink][r]
+[s]
+
+*tag_yusyou
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+
+[bg storage=yusyou.jpg time=500]
+
+オグリキャップはニンジン一本をおいしそうに食べた。[l][r]
+力がみなぎり有馬記念を優勝した。[r]
 
 【 GOOD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_maketa
+
+[bg storage=maketa.jpg time=500]
+
+[cm]
+
+オグリキャップは今にも死にそうな表情をしていた。[l][r]
+レースで力を発揮できず9着で終わった。[r]
+
+【 BAD END 】[l][cm]
 
 [jump target=*start]
